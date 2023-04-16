@@ -1,0 +1,172 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mykytko/RiderProjects/storesolid/ConsoleApp1/ConsoleApp1.csproj": {}
+  },
+  "projects": {
+    "/Users/mykytko/RiderProjects/storesolid/ClassLibrary1/ClassLibrary1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mykytko/RiderProjects/storesolid/ClassLibrary1/ClassLibrary1.csproj",
+        "projectName": "ClassLibrary1",
+        "projectPath": "/Users/mykytko/RiderProjects/storesolid/ClassLibrary1/ClassLibrary1.csproj",
+        "packagesPath": "/Users/mykytko/.nuget/packages/",
+        "outputPath": "/Users/mykytko/RiderProjects/storesolid/ClassLibrary1/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mykytko/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/mykytko/RiderProjects/storesolid/DB/DB.csproj": {
+                "projectPath": "/Users/mykytko/RiderProjects/storesolid/DB/DB.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mykytko/RiderProjects/storesolid/ConsoleApp1/ConsoleApp1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mykytko/RiderProjects/storesolid/ConsoleApp1/ConsoleApp1.csproj",
+        "projectName": "ConsoleApp1",
+        "projectPath": "/Users/mykytko/RiderProjects/storesolid/ConsoleApp1/ConsoleApp1.csproj",
+        "packagesPath": "/Users/mykytko/.nuget/packages/",
+        "outputPath": "/Users/mykytko/RiderProjects/storesolid/ConsoleApp1/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mykytko/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/mykytko/RiderProjects/storesolid/ClassLibrary1/ClassLibrary1.csproj": {
+                "projectPath": "/Users/mykytko/RiderProjects/storesolid/ClassLibrary1/ClassLibrary1.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mykytko/RiderProjects/storesolid/DB/DB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mykytko/RiderProjects/storesolid/DB/DB.csproj",
+        "projectName": "DB",
+        "projectPath": "/Users/mykytko/RiderProjects/storesolid/DB/DB.csproj",
+        "packagesPath": "/Users/mykytko/.nuget/packages/",
+        "outputPath": "/Users/mykytko/RiderProjects/storesolid/DB/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mykytko/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

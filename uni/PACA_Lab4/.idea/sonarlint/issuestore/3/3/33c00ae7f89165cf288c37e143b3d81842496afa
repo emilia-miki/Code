@@ -1,0 +1,10 @@
+
+Ecsharpsquid:S1116r"Remove this empty statement.(Øî¾¦ÿÿÿÿÿ8¨…ÌìÊ/
+;csharpsquid:S29332"Make 'pair' 'readonly'.(€Ñúí8äËëÊ/
+Gcsharpsquid:S29334"Make 'connections' 'readonly'.(Ìèóñûÿÿÿÿ8ŸşËëÊ/
+?csharpsquid:S2933H"Make '_visited' 'readonly'.(—Èœ…8ÈÕ×ëÊ/
+9csharpsquid:S2933I"Make '_n' 'readonly'.(şÍ×8”ßêëÊ/
+Wcsharpsquid:S3459F"3Remove unassigned field '_roads', or set its value.(ÀèÓ8ÒÕØëÊ/
+bcsharpsquid:S3459G"9Remove unassigned field '_connections', or set its value.(õœ‰ûÿÿÿÿ8Ú«ìÊ/
+Zcsharpsquid:S1144="1Remove the unused private method 'addConnection'.(‘É±÷úÿÿÿÿ8çËëÊ/
+rcsharpsquid:S44872"NRemove this unread private field 'pair' or refactor the code to use its value.(€Ñúí8¤íçëÊ/

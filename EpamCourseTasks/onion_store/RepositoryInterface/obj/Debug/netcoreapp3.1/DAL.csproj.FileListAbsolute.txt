@@ -1,0 +1,9 @@
+/Users/mykytko/RiderProjects/storemultilayered/DAL/bin/Debug/netcoreapp3.1/DAL.deps.json
+/Users/mykytko/RiderProjects/storemultilayered/DAL/bin/Debug/netcoreapp3.1/DAL.dll
+/Users/mykytko/RiderProjects/storemultilayered/DAL/bin/Debug/netcoreapp3.1/DAL.pdb
+/Users/mykytko/RiderProjects/storemultilayered/DAL/obj/Debug/netcoreapp3.1/DAL.csprojAssemblyReference.cache
+/Users/mykytko/RiderProjects/storemultilayered/DAL/obj/Debug/netcoreapp3.1/DAL.AssemblyInfoInputs.cache
+/Users/mykytko/RiderProjects/storemultilayered/DAL/obj/Debug/netcoreapp3.1/DAL.AssemblyInfo.cs
+/Users/mykytko/RiderProjects/storemultilayered/DAL/obj/Debug/netcoreapp3.1/DAL.csproj.CoreCompileInputs.cache
+/Users/mykytko/RiderProjects/storemultilayered/DAL/obj/Debug/netcoreapp3.1/DAL.dll
+/Users/mykytko/RiderProjects/storemultilayered/DAL/obj/Debug/netcoreapp3.1/DAL.pdb

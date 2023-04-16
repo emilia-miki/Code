@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/mykytko/cpp-projects/tcp/build",
+  "command": "/usr/bin/clang -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -o CMakeFiles/server.dir/server.c.o -c /Users/mykytko/cpp-projects/tcp/server.c",
+  "file": "/Users/mykytko/cpp-projects/tcp/server.c"
+},
+{
+  "directory": "/Users/mykytko/cpp-projects/tcp/build",
+  "command": "/usr/bin/clang -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -o CMakeFiles/client.dir/client.c.o -c /Users/mykytko/cpp-projects/tcp/client.c",
+  "file": "/Users/mykytko/cpp-projects/tcp/client.c"
+}
+]

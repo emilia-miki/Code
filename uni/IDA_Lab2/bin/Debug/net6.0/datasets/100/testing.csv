@@ -1,0 +1,35 @@
+Header,Clickbait formula,Non-clickbait formula,Clickbait,Non-clickbait,Success
+"clickbait Sarah Jessica Parker Talks Being A Carrie, ""Hocus Pocus,"" And Her Love Of New York","0.492*0.492*0.492*0.492*0.492*0.937*0.492*0.492*0.492*0.623*0.746*0.492*0.582*0.437*0.746","0.508*0.508*0.508*0.508*0.508*0.063*0.508*0.508*0.508*0.377*0.254*0.508*0.418*0.563*0.254",0.000,0.000,success
+"clickbait Which Type Of Swearer Are You","0.746*0.492*0.582*0.492*0.873*0.937","0.254*0.508*0.418*0.508*0.127*0.063",0.042,0.000,success
+"clickbait A Dad Recorded All The Adorable Questions His Son Asked When Watching Star Wars For The First Time","0.937*0.492*0.492*0.492*0.678*0.492*0.492*0.915*0.492*0.492*0.746*0.492*0.746*0.492*0.213*0.678*0.492*0.497","0.063*0.508*0.508*0.508*0.322*0.508*0.508*0.085*0.508*0.508*0.254*0.508*0.254*0.508*0.787*0.322*0.508*0.503",0.000,0.000,success
+"clickbait 29 Impossibly Stylish Cat Gifts, In Order Of Awesomeness","0.492*0.492*0.492*0.492*0.492*0.406*0.492*0.582*0.492","0.508*0.508*0.508*0.508*0.508*0.594*0.508*0.418*0.508",0.001,0.001,failure
+"clickbait 13 Of The Most Glorious Made-Up Words From Literature","0.492*0.582*0.678*0.746*0.492*0.492*0.492*0.623*0.492","0.508*0.418*0.322*0.254*0.508*0.508*0.508*0.377*0.508",0.003,0.000,success
+"clickbait We Pranked A Bunch Of People By Dropping An iPhone In Front Of Them","0.492*0.492*0.937*0.492*0.582*0.492*0.492*0.492*0.623*0.492*0.406*0.492*0.582*0.492","0.508*0.508*0.063*0.508*0.418*0.508*0.508*0.508*0.377*0.508*0.594*0.508*0.418*0.508",0.000,0.000,success
+"clickbait 23 Flaws Every Sneakerhead Has","0.492*0.492*0.831*0.492*0.746","0.508*0.508*0.169*0.508*0.254",0.036,0.003,success
+"clickbait We Know Your Zodiac Sign Based On Which Cat You Choose","0.492*0.492*0.898*0.746*0.492*0.746*0.499*0.746*0.492*0.937*0.492","0.508*0.508*0.102*0.254*0.508*0.254*0.501*0.254*0.508*0.063*0.508",0.002,0.000,success
+"clickbait Grimes On Her New Album And The Heartbreaking Inspiration Behind ""Oblivion""","0.492*0.499*0.746*0.437*0.246*0.623*0.678*0.492*0.492*0.492*0.492","0.508*0.501*0.254*0.563*0.754*0.377*0.322*0.508*0.508*0.508*0.508",0.000,0.000,success
+"clickbait This Instagram Account Is Recreating 2015's Greatest Hits With Barbies","0.582*0.492*0.492*0.642*0.492*0.492*0.492*0.246*0.312*0.492","0.418*0.508*0.508*0.358*0.508*0.508*0.508*0.754*0.688*0.508",0.000,0.001,failure
+"clickbait The 22 Best Adele Memes","0.678*0.492*0.746*0.492*0.492","0.322*0.508*0.254*0.508*0.508",0.030,0.005,success
+"clickbait 17 Pictures Hot People Will Never Understand","0.831*0.492*0.492*0.492*0.492*0.492*0.492","0.169*0.508*0.508*0.508*0.508*0.508*0.508",0.006,0.001,success
+"clickbait How Badly Are You Taking The One Direction Hiatus","0.831*0.492*0.873*0.937*0.492*0.678*0.497*0.492*0.492","0.169*0.508*0.127*0.063*0.508*0.322*0.503*0.508*0.508",0.007,0.000,success
+"clickbait We Know What You Want For Christmas Based On Your Zodiac Sign","0.492*0.492*0.746*0.937*0.492*0.213*0.746*0.746*0.499*0.898*0.746*0.492","0.508*0.508*0.254*0.063*0.508*0.787*0.254*0.254*0.501*0.102*0.254*0.508",0.001,0.000,success
+"clickbait Guys Try Pinterest Leaf Hacks","0.492*0.746*0.492*0.492*0.492","0.508*0.254*0.508*0.508*0.508",0.022,0.009,success
+"clickbait 22 Tips For Hiking With Kids That Every Parent Should Know","0.492*0.492*0.213*0.492*0.312*0.492*0.746*0.831*0.492*0.831*0.492","0.508*0.508*0.787*0.508*0.688*0.508*0.254*0.169*0.508*0.169*0.508",0.000,0.000,success
+"clickbait The Scariest Halloween Candy Taste Test","0.678*0.492*0.492*0.492*0.492*0.492","0.322*0.508*0.508*0.508*0.508*0.508",0.010,0.006,success
+"non-clickbait Global Industrial Slump Prompts Plant Closings and Layoffs Across Asia","0.246*0.492*0.492*0.492*0.492*0.492*0.623*0.492*0.492*0.492","0.754*0.508*0.508*0.508*0.508*0.508*0.377*0.508*0.508*0.508",0.000,0.001,success
+"non-clickbait Nuclear leaks after Japan quake are worse than first reported","0.492*0.492*0.746*0.492*0.492*0.873*0.492*0.492*0.492*0.492","0.508*0.508*0.254*0.508*0.508*0.127*0.508*0.508*0.508*0.508",0.001,0.000,failure
+"non-clickbait UEFA Champions League: April 1, 2008","0.492*0.492*0.492*0.492*0.492*0.164","0.508*0.508*0.508*0.508*0.508*0.836",0.002,0.014,success
+"non-clickbait Medtronic Paid $788,000 to Doctor Accused of Faking Study","0.492*0.492*0.492*0.492*0.562*0.492*0.492*0.582*0.492*0.492","0.508*0.508*0.508*0.508*0.438*0.508*0.508*0.418*0.508*0.508",0.001,0.000,failure
+"non-clickbait Ivory Coast beats Serbia and Montenegro 3-2 in Group C","0.492*0.246*0.492*0.492*0.623*0.492*0.492*0.406*0.746*0.492","0.508*0.754*0.508*0.508*0.377*0.508*0.508*0.594*0.254*0.508",0.000,0.000,success
+"non-clickbait Political Shifts on Gay Rights Lag Behind Culture","0.492*0.492*0.499*0.492*0.492*0.492*0.492*0.492","0.508*0.508*0.501*0.508*0.508*0.508*0.508*0.508",0.002,0.002,success
+"non-clickbait Taliban militant kills at least thirteen in northwest Pakistan","0.492*0.492*0.246*0.746*0.492*0.492*0.406*0.492*0.492","0.508*0.508*0.754*0.254*0.508*0.508*0.594*0.508*0.508",0.001,0.001,success
+"non-clickbait National Park Service covers donation box at United Airlines Flight 93 memorial","0.492*0.492*0.492*0.492*0.492*0.492*0.746*0.492*0.492*0.492*0.492*0.492","0.508*0.508*0.508*0.508*0.508*0.508*0.254*0.508*0.508*0.508*0.508*0.508",0.000,0.000,failure
+"non-clickbait Yankees Profit From Their Own Seventh-Inning Stretch","0.246*0.246*0.623*0.831*0.746*0.492*0.492","0.754*0.754*0.377*0.169*0.254*0.508*0.508",0.003,0.001,failure
+"non-clickbait At least twenty dead after mudslides in Peru","0.746*0.492*0.492*0.246*0.746*0.492*0.406*0.492","0.254*0.508*0.508*0.754*0.254*0.508*0.594*0.508",0.002,0.001,failure
+"non-clickbait Iran Plans Tests Toward Starting a Nuclear Plant","0.492*0.492*0.492*0.492*0.492*0.937*0.492*0.492","0.508*0.508*0.508*0.508*0.508*0.063*0.508*0.508",0.003,0.000,failure
+"non-clickbait Contestant seriously injured during live German game show","0.492*0.492*0.492*0.746*0.746*0.492*0.623*0.492","0.508*0.508*0.508*0.254*0.254*0.508*0.377*0.508",0.005,0.000,failure
+"non-clickbait Former US Senator Jesse Helms dead at 86","0.246*0.249*0.492*0.492*0.492*0.246*0.746*0.492","0.754*0.751*0.508*0.508*0.508*0.754*0.254*0.508",0.000,0.004,success
+"non-clickbait Kimi Räikkönen wins 2009 Belgian Grand Prix","0.492*0.492*0.492*0.246*0.492*0.492*0.492","0.508*0.508*0.508*0.754*0.508*0.508*0.508",0.002,0.007,success
+"non-clickbait Yahoo and Microsoft Said to Be Weighing Ad Pact","0.492*0.623*0.492*0.492*0.562*0.623*0.492*0.492*0.492","0.508*0.377*0.508*0.508*0.438*0.377*0.508*0.508*0.508",0.002,0.001,failure
+"non-clickbait Suspect in model Jasmine Fiore's murder found dead","0.492*0.406*0.492*0.492*0.492*0.492*0.164*0.246","0.508*0.594*0.508*0.508*0.508*0.508*0.836*0.754",0.000,0.006,success
+"non-clickbait Irish win narrowly over Italy in RBS 6 opening match","0.492*0.492*0.492*0.492*0.492*0.406*0.492*0.746*0.746*0.492","0.508*0.508*0.508*0.508*0.508*0.594*0.508*0.254*0.254*0.508",0.001,0.000,failure

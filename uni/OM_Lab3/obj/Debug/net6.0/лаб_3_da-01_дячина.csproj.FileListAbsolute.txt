@@ -1,0 +1,15 @@
+/Users/mykytko/RiderProjects/лаб_3_da-01_дячина/bin/Debug/net6.0/лаб_3_da-01_дячина
+/Users/mykytko/RiderProjects/лаб_3_da-01_дячина/bin/Debug/net6.0/лаб_3_da-01_дячина.deps.json
+/Users/mykytko/RiderProjects/лаб_3_da-01_дячина/bin/Debug/net6.0/лаб_3_da-01_дячина.runtimeconfig.json
+/Users/mykytko/RiderProjects/лаб_3_da-01_дячина/bin/Debug/net6.0/лаб_3_da-01_дячина.dll
+/Users/mykytko/RiderProjects/лаб_3_da-01_дячина/bin/Debug/net6.0/лаб_3_da-01_дячина.pdb
+/Users/mykytko/RiderProjects/лаб_3_da-01_дячина/obj/Debug/net6.0/лаб_3_da-01_дячина.csproj.AssemblyReference.cache
+/Users/mykytko/RiderProjects/лаб_3_da-01_дячина/obj/Debug/net6.0/лаб_3_da-01_дячина.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mykytko/RiderProjects/лаб_3_da-01_дячина/obj/Debug/net6.0/лаб_3_da-01_дячина.AssemblyInfoInputs.cache
+/Users/mykytko/RiderProjects/лаб_3_da-01_дячина/obj/Debug/net6.0/лаб_3_da-01_дячина.AssemblyInfo.cs
+/Users/mykytko/RiderProjects/лаб_3_da-01_дячина/obj/Debug/net6.0/лаб_3_da-01_дячина.csproj.CoreCompileInputs.cache
+/Users/mykytko/RiderProjects/лаб_3_da-01_дячина/obj/Debug/net6.0/лаб_3_da-01_дячина.dll
+/Users/mykytko/RiderProjects/лаб_3_da-01_дячина/obj/Debug/net6.0/refint/лаб_3_da-01_дячина.dll
+/Users/mykytko/RiderProjects/лаб_3_da-01_дячина/obj/Debug/net6.0/лаб_3_da-01_дячина.pdb
+/Users/mykytko/RiderProjects/лаб_3_da-01_дячина/obj/Debug/net6.0/лаб_3_da-01_дячина.genruntimeconfig.cache
+/Users/mykytko/RiderProjects/лаб_3_da-01_дячина/obj/Debug/net6.0/ref/лаб_3_da-01_дячина.dll

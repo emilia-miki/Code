@@ -1,0 +1,15 @@
+/Users/mykytko/RiderProjects/paca_lab1/bin/Debug/net5.0/paca_lab1.deps.json
+/Users/mykytko/RiderProjects/paca_lab1/bin/Debug/net5.0/paca_lab1.runtimeconfig.json
+/Users/mykytko/RiderProjects/paca_lab1/bin/Debug/net5.0/paca_lab1.runtimeconfig.dev.json
+/Users/mykytko/RiderProjects/paca_lab1/bin/Debug/net5.0/paca_lab1.dll
+/Users/mykytko/RiderProjects/paca_lab1/bin/Debug/net5.0/ref/paca_lab1.dll
+/Users/mykytko/RiderProjects/paca_lab1/bin/Debug/net5.0/paca_lab1.pdb
+/Users/mykytko/RiderProjects/paca_lab1/obj/Debug/net5.0/paca_lab1.csproj.AssemblyReference.cache
+/Users/mykytko/RiderProjects/paca_lab1/obj/Debug/net5.0/paca_lab1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mykytko/RiderProjects/paca_lab1/obj/Debug/net5.0/paca_lab1.AssemblyInfoInputs.cache
+/Users/mykytko/RiderProjects/paca_lab1/obj/Debug/net5.0/paca_lab1.AssemblyInfo.cs
+/Users/mykytko/RiderProjects/paca_lab1/obj/Debug/net5.0/paca_lab1.csproj.CoreCompileInputs.cache
+/Users/mykytko/RiderProjects/paca_lab1/obj/Debug/net5.0/paca_lab1.dll
+/Users/mykytko/RiderProjects/paca_lab1/obj/Debug/net5.0/ref/paca_lab1.dll
+/Users/mykytko/RiderProjects/paca_lab1/obj/Debug/net5.0/paca_lab1.pdb
+/Users/mykytko/RiderProjects/paca_lab1/obj/Debug/net5.0/paca_lab1.genruntimeconfig.cache

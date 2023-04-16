@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Advertising agency</title>
+  </head>
+  <body class="page__body">
+    <h1 class="page__heading">
+      Advertising agency
+    </h1>
+
+    <section class="page__section section">
+      <h2 class="section__main-heading">Template</h2>
+
+      <div class="section__actions">
+        <div class="section__action">
+          <h3 class="section__form-heading">Template (POST)</h3>
+  
+          <!-- Template ADD (POST) -->
+          <form
+            action="http://localhost:8000/internal/templates/"
+            class="form section__form"
+            name="templatePost"
+          >
+            <label class="form__label">
+              HTML:
+              <select name="html_id" required>
+                <option value="" disabled selected>Choose a html file</option>
+              </select>
+            </label>
+  
+            <label class="form__label">
+              Styles:
+              <select name="style_ids" multiple required></select>
+            </label>
+  
+            <label class="form__label">
+              Format:
+              <select name="format" required>
+                <option value="" disabled selected>Choose a format</option>
+              </select>
+            </label>
+  
+            <label class="form__label">
+              Price:
+              <input
+                name="price"
+                type="number"
+                class="form__input"
+                placeholder="50"
+                min="0"
+                max="10000"
+                required
+              >
+            </label>
+  
+            <button type="submit">Add the template</button>
+          </form>
+        </div>
+  
+        <div class="section__action">
+          <h3 class="section__form-heading">Template (PUT)</h3>
+  
+          <!-- Template UPDATE (PUT) -->
+          <form
+            action="http://localhost:8000/internal/templates/"
+            class="form section__form"
+            name="templatePut"
+          >
+            <label class="form__label">
+              Template:
+              <select name="id" required>
+                <option value="" disabled selected>Choose a template</option>
+              </select>
+            </label>
+  
+            <label class="form__label">
+              HTML:
+              <select name="html_id" required disabled>
+                <option value="" disabled selected>Choose a html file</option>
+              </select>
+            </label>
+  
+            <label class="form__label">
+              Styles:
+              <select name="style_ids" multiple required disabled></select>
+            </label>
+  
+            <label class="form__label">
+              Format:
+              <select name="format" required disabled>
+                <option value="" disabled selected>Choose a format</option>
+              </select>
+            </label>
+  
+            <label class="form__label">
+              Price:
+              <input
+                name="price"
+                type="number"
+                class="form__input"
+                placeholder="50"
+                min="0"
+                max="10000"
+                required
+                disabled
+              >
+            </label>
+  
+            <button type="submit" disabled>Update the template</button>
+          </form>
+        </div>
+  
+        <div class="section__action">
+          <h3 class="section__form-heading">Template (DELETE)</h3>
+  
+          <!-- Template DELETE (DELETE) -->
+          <form
+            action="http://localhost:8000/internal/templates/"
+            class="form section__form"
+            name="templateDelete"
+          >
+            <label class="form__label">
+              Template:
+              <select name="id" required>
+                <option value="" disabled selected>Choose a template</option>
+              </select>
+            </label>
+  
+            <button type="submit">Delete</button>
+          </form>
+        </div>
+  
+      </div>
+    </section>
+
+    <section class="page__section section">
+      <h2 class="section__main-heading">HTML</h2>
+
+      <div class="section__actions">
+        <div class="section__action">
+          <h3 class="section__form-heading">HTML (POST)</h3>
+  
+          <!-- HTML ADD (POST) -->
+          <form
+            action="http://localhost:8000/internal/htmls/"
+            class="form section__form"
+            name="htmlPost"
+          >
+            <label class="form__label">
+              <textarea
+                class="form__textarea"
+                name="content"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+            </label>
+
+            <button type="submit">Add the HTML</button>
+          </form>
+        </div>
+  
+        <div class="section__action">
+          <h3 class="section__form-heading">HTML (PUT)</h3>
+  
+          <!-- HTML UPDATE (PUT) -->
+          <form
+            action="http://localhost:8000/internal/htmls/"
+            class="form section__form"
+            name="htmlPut"
+          >
+            <label class="form__label">
+              HTML:
+              <select name="id" required>
+                <option value="" disabled selected>Choose a HTML</option>
+              </select>
+            </label>
+
+            <label class="form__label">
+              Code:
+              <textarea
+                class="form__textarea"
+                name="content"
+                cols="30"
+                rows="10"
+                required
+                disabled
+              ></textarea>
+            </label>
+
+            <button type="submit" disabled>Update the HTML</button>
+          </form>
+        </div>
+  
+        <div class="section__action">
+          <h3 class="section__form-heading">HTML (DELETE)</h3>
+  
+          <!-- HTML DELETE (DELETE) -->
+          <form
+            action="http://localhost:8000/internal/htmls/"
+            class="form section__form"
+            name="htmlDelete"
+          >
+            <label class="form__label">
+              HTML:
+              <select name="id" required>
+                <option value="" disabled selected>Choose a HTML</option>
+              </select>
+            </label>
+  
+            <button type="submit">Delete the HTML</button>
+          </form>
+        </div>
+  
+      </div>
+    </section>
+
+    <section class="page__section section">
+      <h2 class="section__main-heading">Style</h2>
+
+      <div class="section__actions">
+        <div class="section__action">
+          <h3 class="section__form-heading">Style (POST)</h3>
+  
+          <!-- Style ADD (POST) -->
+          <form
+            action="http://localhost:8000/internal/styles/"
+            class="form section__form"
+            name="stylePost"
+          >
+            <label class="form__label">
+              <textarea
+                class="form__textarea"
+                name="content"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+            </label>
+
+            <button type="submit">Add the style</button>
+          </form>
+        </div>
+  
+        <div class="section__action">
+          <h3 class="section__form-heading">Style (PUT)</h3>
+  
+          <!-- Style UPDATE (PUT) -->
+          <form
+            action="http://localhost:8000/internal/styles/"
+            class="form section__form"
+            name="stylePut"
+          >
+            <label class="form__label">
+              Style:
+              <select name="id" required>
+                <option value="" disabled selected>Choose a style</option>
+              </select>
+            </label>
+
+            <label class="form__label">
+              Code:
+              <textarea
+                class="form__textarea"
+                name="content"
+                cols="30"
+                rows="10"
+                required
+                disabled
+              ></textarea>
+            </label>
+
+            <button type="submit" disabled>Update the style</button>
+          </form>
+        </div>
+  
+        <div class="section__action">
+          <h3 class="section__form-heading">Style (DELETE)</h3>
+  
+          <!-- Style DELETE (DELETE) -->
+          <form
+            action="http://localhost:8000/internal/styles/"
+            class="form section__form"
+            name="styleDelete"
+          >
+            <label class="form__label">
+              Style:
+              <select name="id" required>
+                <option value="" disabled selected>Choose a style</option>
+              </select>
+            </label>
+  
+            <button type="submit">Delete the style</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

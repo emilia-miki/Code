@@ -1,0 +1,301 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@namespace BlazorWebInterface.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <base href="~/"/>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
+    <link href="css/site.css" rel="stylesheet"/>
+    <link href="BlazorWebInterface.styles.css" rel="stylesheet"/>
+    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered"/>
+</head>
+<body>
+@RenderBody()
+
+<div id="blazor-error-ui">
+    <environment include="Staging,Production">
+        An error has occurred. This application may no longer respond until reloaded.
+    </environment>
+    <environment include="Development">
+        An unhandled exception has occurred. See browser dev tools for details.
+    </environment>
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>
+
+<script src="_framework/blazor.server.js"></script>
+<script>
+let foodDict, animals, animalImg, statistics;
+let fgCanvas, canvas, imageData, scale, translatePos, minScale;
+let update = true;
+let reset = false;
+let initialized = false;
+
+function draw() {
+    if (update) {
+        update = false;
+        fgCanvas.ctx.clearRect(0, 0, fgCanvas.width, fgCanvas.height);
+        fgCanvas.ctx.drawImage(canvas, 0, 0);
+        
+        canvas.ctx.save();
+        canvas.ctx.translate(translatePos.x, translatePos.y);
+        canvas.ctx.scale(scale, scale);
+        createImageBitmap(imageData).then(bm => {
+            canvas.ctx.drawImage(bm, translatePos.x, translatePos.y, imageData.height * scale, imageData.width * scale);
+        });
+        
+        
+        // draw animals
+        Object.values(animals).forEach(animal => {
+            let x = animal.X * scale + translatePos.x;
+            let y = animal.Y * scale + translatePos.y;
+            if (0 <= x && x < fgCanvas.width && 0 <= y && y <= fgCanvas.height) {
+                fgCanvas.ctx.drawImage(animalImg[animal.AnimalType], x, y, scale, scale);
+            }
+        });
+        canvas.ctx.restore();
+    }
+    if (reset) {
+        reset = false;
+        return;
+    }
+    requestAnimationFrame(draw);
+}
+
+window.addAnimal = (id, x, y, type) => {
+    animals[id] = { X: x,  Y: y, AnimalType: type };
+    update = true;
+}
+
+window.removeAnimal = (id) => {
+    delete animals[id];
+    update = true;
+}
+
+window.moveAnimal = (id, x, y) => {
+    animals[id].X = x;
+    animals[id].Y = y;
+    update = true;
+}
+
+window.updateFoodRatio = (x, ratio) => {
+    foodDict[x].ratio = ratio;
+    imageData.data[x * 4] = (1 - ratio) * foodDict[x].biomePixel.red + ratio * foodDict[x].foodPixel.red;
+    imageData.data[x * 4 + 1] = (1 - ratio) * foodDict[x].biomePixel.green + ratio * foodDict[x].foodPixel.green;
+    imageData.data[x * 4 + 2] = (1 - ratio) * foodDict[x].biomePixel.blue + ratio * foodDict[x].foodPixel.blue;
+    update = true;
+}
+
+window.downloadFileFromStream = async (fileName, contentStreamReference) => {
+    const arrayBuffer = await contentStreamReference.arrayBuffer();
+    const blob = new Blob([arrayBuffer]);
+    const url = URL.createObjectURL(blob);
+    const anchorElement = document.createElement('a');
+    anchorElement.href = url;
+    anchorElement.download = fileName ?? '';
+    anchorElement.click();
+    anchorElement.remove();
+    URL.revokeObjectURL(url);
+}
+
+function validateTranslatePos(translatePos, scale, minScale, imageData, canvas) {
+        if (scale >= minScale) {
+            if (translatePos.x > 0) {
+                translatePos.x = 0;
+                }
+            if (translatePos.y > 0) {
+                translatePos.y = 0;
+            }
+            if (translatePos.x < - imageData.width * scale + canvas.width)
+            {
+                translatePos.x = - imageData.width * scale + canvas.width;
+            }
+            if (translatePos.y < - imageData.height * scale + canvas.height)
+            {
+                translatePos.y = - imageData.height * scale + canvas.height;
+            }
+        }
+        return translatePos;
+    }
+
+function initialize() {
+    canvas = document.createElement('canvas');
+    fgCanvas = document.getElementById('simulation');
+    const mouse  = {x : 0, y : 0, oldX : 0, oldY : 0, button : false}
+    function mouseEvents(e){
+                mouse.oldX = mouse.x;
+                mouse.oldY = mouse.y;
+                mouse.x = e.pageX;
+                mouse.y = e.pageY;
+                mouse.button = e.type === "mousedown" ? true : e.type === "mouseup" ? false : mouse.button;
+                if (mouse.button) {
+                    translatePos.x += mouse.x - mouse.oldX;
+                    translatePos.y += mouse.y - mouse.oldY;
+                    translatePos = validateTranslatePos(translatePos, scale, minScale, imageData, canvas);
+                    update = true;
+                }
+            }
+    ["down", "up", "move"].forEach(name => document.addEventListener("mouse" + name, mouseEvents));
+    
+    let scaleMultiplier = 0.95;
+    
+    fgCanvas.addEventListener('wheel', function (event) {
+            if (event.deltaY < 0) {
+                scale /= scaleMultiplier;
+            } else if (event.deltaY > 0) {
+                scale *= scaleMultiplier;
+            }
+            if (scale < minScale) {
+                scale = minScale;
+            }
+            translatePos = validateTranslatePos(translatePos, scale, minScale, imageData, canvas);
+            update = true;
+        });
+    initialized = true;
+}
+
+window.reset = () => {
+    reset = true;
+}
+
+window.firstRender = (height, width, mapData, foodJson, animalsJson, graphicsJson) => {
+    if (!initialized) {
+        initialize();
+    }
+    
+    foodDict = [];
+    animals = [];
+    statistics = [];
+    update = true;
+    
+    canvas.width = window.innerWidth / 2 - 60;
+    canvas.height = window.innerHeight - 60;
+    canvas.ctx = canvas.getContext('2d');
+    canvas.ctx.imageSmoothingEnabled = false;
+    
+    fgCanvas.width = window.innerWidth / 2 - 60;
+    fgCanvas.height = window.innerHeight - 60;
+    fgCanvas.ctx = fgCanvas.getContext('2d');
+    
+    imageData = canvas.ctx.createImageData(width, height);
+    let graphics = JSON.parse(graphicsJson);
+    for (let i = 0; i < height; i++) {
+        for (let j = 0; j < width; j++) {
+            let biomeId = mapData[i * width + j];
+            imageData.data[4 * i * width + 4 * j] = graphics.biomeColors[biomeId].red;
+            imageData.data[4 * i * width + 4 * j + 1] = graphics.biomeColors[biomeId].green;
+            imageData.data[4 * i * width + 4 * j + 2] = graphics.biomeColors[biomeId].blue;
+            imageData.data[4 * i * width + 4 * j + 3] = 255;
+        }
+    }
+    // parse ObjectTypesSpecification.json to r, g, b
+    let foodSuppliers = JSON.parse(foodJson);
+    Object.keys(foodSuppliers).forEach(key => {
+        let value = foodSuppliers[key];
+        let r = graphics.foodColors[value.FoodType].red;
+        let g = graphics.foodColors[value.FoodType].green;
+        let b = graphics.foodColors[value.FoodType].blue;
+        
+        // fill foodDict
+        foodDict[key] = { 
+            ratio: 1,
+            biomePixel: {
+                red: imageData.data[key * 4],
+                green: imageData.data[key * 4 + 1],
+                blue: imageData.data[key * 4 + 2]
+            },
+            foodPixel: {
+                red: r, 
+                green: g, 
+                blue: b
+            }
+        };
+        
+        imageData.data[key * 4] = r;
+        imageData.data[key * 4 + 1] = g;
+        imageData.data[key * 4 + 2] = b;
+    });
+    
+    // fill animals
+    animals = JSON.parse(animalsJson);
+    
+    // fill animals imageData
+    animalImg = [];
+    Object.values(graphics.animalPictures).forEach(path => {
+        let image = new Image();
+        image.src = path;
+        image.onload = () => update = true;
+        animalImg.push(image);
+    });
+    
+    translatePos = {
+        x: 0,
+        y: 0
+    }
+    
+    let minScaleW = fgCanvas.width / width;
+    let minScaleH = fgCanvas.height / height;
+    minScale = minScaleW < minScaleH ? minScaleW : minScaleH;
+    if (minScale < 16) {
+        minScale = 16;
+    }
+    scale = minScale;
+        
+    requestAnimationFrame(draw);
+};
+
+window.updateStatistics = (jsonDict) => {
+    let canvas = document.getElementById('statistics');
+    let ctx = canvas.getContext('2d');
+    let dict = JSON.parse(jsonDict);
+    if (Object.keys(dict).length === 0) {
+        return;    
+    }
+    statistics.push(dict);
+    ctx.font = "14px Arial";
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    let len = Object.keys(statistics).length;
+    let max = 0;
+    Object.keys(statistics).forEach(key => {
+        Object.keys(statistics[key]).forEach(sKey => {
+            if (statistics[key][sKey] > max) {
+                max = statistics[key][sKey];    
+            }
+        });
+    });
+    let animalIter = 0;
+    let animalsLen = Object.keys(statistics[0]).length;
+    Object.keys(statistics[0]).forEach(animal => {
+        let i = 0;
+        let r = 128 + 127 * animalIter / animalsLen;
+        let g = 255 * (animalsLen - animalIter) / animalsLen;
+        let b = 255 * animalIter / animalsLen;
+        ctx.strokeStyle = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+        ctx.fillStyle = ctx.strokeStyle;
+        ctx.fillText(animal, 50 + 750 * animalIter / animalsLen, 385);
+        ctx.fillStyle = 'black';
+        ctx.fillText('0', 86, 350);
+        ctx.fillText(max, 50, 14);
+        ctx.beginPath();
+        ctx.moveTo(100, 350 * (1 - statistics[0][animal] / max));
+        Object.keys(statistics).forEach(key => {
+            let current;
+            if (animal in statistics[key]) {
+                current = statistics[key][animal];
+            } else {
+                current = 0;
+            }
+            ctx.lineTo(100 + 700 * i / len, 350 * (1 - current / max));
+            i++;
+        });
+        ctx.stroke();
+        animalIter++;
+    });
+}
+</script>
+</body>
+</html>

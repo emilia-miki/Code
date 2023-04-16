@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\nd235\OneDrive\Documents\kursach1\build\CMakeFiles\5d810bcb4593b01b291ace6569d6c4a9\Experimental.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\nd235\OneDrive\Documents\kursach1\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\nd235\OneDrive\Documents\kursach1\build\CMakeFiles\Experimental" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EEE194C0-2FE0-30DA-8801-85EE19A04FC0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

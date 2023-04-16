@@ -1,0 +1,87 @@
+.page {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    margin: 0;
+    padding: 20px;
+
+    background-color: #ffeefc;
+  }
+
+  &__heading {
+    margin: 0;
+    padding: 0;
+
+    font-size: 30px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+
+  width: max-content;
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+  &__textarea {
+    resize: none;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  &__main-heading {
+    margin: 0;
+    padding: 0;
+
+    font-size: 24px;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__form-heading {
+    margin: 0;
+    padding: 0;
+
+    font-size: 20px;
+  }
+
+  &__form {
+
+  }
+
+  &__selected {
+    color: bisque;
+  }
+}

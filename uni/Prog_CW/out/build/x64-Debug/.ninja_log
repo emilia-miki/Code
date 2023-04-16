@@ -1,0 +1,10 @@
+# ninja log v5
+16	1595	6435931758627520	CMakeFiles/kursach1.dir/heapsort.cpp.obj	b9819c02632c41dc
+8	3702	6433132293642347	CMakeFiles/kursach1.dir/main.cpp.obj	92eefa407ff6f48
+2	1689	6433132529739619	CMakeFiles/kursach1.dir/priority_queue.cpp.obj	11de09618b04ca48
+9	1710	6435931759846757	CMakeFiles/kursach1.dir/search.cpp.obj	4e19be8b33592f90
+1710	2151	6435931763594435	kursach1.exe	b1f035c5b7a0ae33
+1	1614	6435931758107831	CMakeFiles/kursach1.dir/treesort.cpp.obj	2e23ae7efccdb868
+22	5425	6433132310947909	CMakeFiles/kursach1.dir/huffman_coding.cpp.obj	52d167b6a6aaa682
+1	2250	6439943909403087	CMakeFiles/kursach1.dir/main.cpp.obj	92eefa407ff6f48
+2252	3101	6439943916478701	kursach1.exe	b1f035c5b7a0ae33

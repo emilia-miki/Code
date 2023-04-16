@@ -1,0 +1,9 @@
+C:/Users/nd235/OneDrive/Documents/kursach1/build/CMakeFiles/NightlyMemoryCheck.dir
+C:/Users/nd235/OneDrive/Documents/kursach1/build/CMakeFiles/Experimental.dir
+C:/Users/nd235/OneDrive/Documents/kursach1/build/CMakeFiles/Continuous.dir
+C:/Users/nd235/OneDrive/Documents/kursach1/build/CMakeFiles/Nightly.dir
+C:/Users/nd235/OneDrive/Documents/kursach1/build/CMakeFiles/kursach1.dir
+C:/Users/nd235/OneDrive/Documents/kursach1/build/CMakeFiles/PACKAGE.dir
+C:/Users/nd235/OneDrive/Documents/kursach1/build/CMakeFiles/RUN_TESTS.dir
+C:/Users/nd235/OneDrive/Documents/kursach1/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/nd235/OneDrive/Documents/kursach1/build/CMakeFiles/ZERO_CHECK.dir

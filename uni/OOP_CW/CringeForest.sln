@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CringeForestLibrary", "CringeForestLibrary\CringeForestLibrary.csproj", "{781084F2-FAC4-44FA-8B46-0FE16E7599AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebInterface", "BlazorWebInterface\BlazorWebInterface.csproj", "{2C806306-0E35-4A1F-B381-2F47C6FF99A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{781084F2-FAC4-44FA-8B46-0FE16E7599AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{781084F2-FAC4-44FA-8B46-0FE16E7599AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{781084F2-FAC4-44FA-8B46-0FE16E7599AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{781084F2-FAC4-44FA-8B46-0FE16E7599AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C806306-0E35-4A1F-B381-2F47C6FF99A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C806306-0E35-4A1F-B381-2F47C6FF99A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C806306-0E35-4A1F-B381-2F47C6FF99A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C806306-0E35-4A1F-B381-2F47C6FF99A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
