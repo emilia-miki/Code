@@ -1,0 +1,540 @@
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 76%;
+    margin: auto;
+}
+
+a {
+    color: black;
+    font-weight: 300;
+    font-family: 'Helvetica Neue';
+    font-size: 12px;
+}
+
+.links > a {
+    font-size: 12px;
+}
+
+header > .links {
+    width: 80%;
+    height: 100%;
+}
+
+header > .links > a {
+    color: white;
+    font-size: 12px;
+}
+
+header {
+    position: fixed;
+    background: #A61717;
+    width: 100%;
+    height: 2rem;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+footer {
+    background: #831313;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin-top: 10%;
+}
+
+footer > .mobile > a {
+    margin-top: 1rem;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+}
+
+footer a {
+    font-size: 14px;
+    color: white;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+span {
+    font-style: normal;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+p, span, li {
+    font-size: 12px;
+    font-family: 'Helvetica Neue';
+}
+
+.text {
+    width: 80%;
+    margin: auto;
+}
+
+.text > p {
+    font-weight: 300;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    color: #E94D4D;
+    margin-top: 40.5vh;
+    margin-bottom: 0.5rem;
+}
+
+img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#members {
+    height: 20%;
+    top: 2rem;
+    object-fit: cover;
+}
+
+#white-ward {
+    margin: auto;
+    top: 24.5%;
+    object-fit: cover;
+}
+
+#flag-text-upper {
+    margin-top: 11%;
+}
+
+#flag-text-upper, #flag-text-lower {
+    height: 10%;
+}
+
+#flag-text-upper > span {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#flag-text-lower > a {
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    display: block;
+    text-align: center;
+}
+
+.review {
+    font-style: italic;
+    font-weight: 300;
+}
+
+#reviews {
+    margin-top: 110vw;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#merch-link {
+    margin-top: -10px;
+    text-align: center;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+button {
+    display: block;
+    margin: auto;
+    background-color: #160101;
+    color: white;
+    width: 60%;
+    border: transparent;
+    height: 6%;
+    font-size: 14px;
+    margin-top: 5%;
+}
+
+#merch, #discography {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.merch {
+    width: 40%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.merch img {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+#first {
+    margin-top: 12%;
+}
+
+iframe {
+    margin-top: 12%;
+}
+
+#modal {
+    background: #831313;
+    box-shadow: 6px 6px 5px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    border: transparent;
+    width: 70vw;
+    height: 80vw;
+}
+
+#modal > h4 {
+    color: white;
+    font-family: 'Helvetica Neue';
+    text-align: center;
+}
+
+#modal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    height: 50%;
+    align-items: center;
+}
+
+#modal-container > div {
+    position: relative;
+    width: 60%;
+}
+
+#modal-container img {
+    position: relative;
+    width: 60%;
+}
+
+#modal-container > div > a > img {
+    width: 100%;
+}
+
+.input {
+    border-radius: 14px;
+    width: 100%;
+    background: #D9D9D9;
+    margin: auto;
+    margin-bottom: 8%;
+    height: 10%;
+}
+
+.input > input {
+    margin-top: 3%;
+    margin-left: 3%;
+    background: #D9D9D9;
+    color: black;
+    border: none;
+    font-size: 14px;
+    font-family: 'Helvetica Neue';
+    width: 60%;
+}
+
+.input > input::placeholder {
+    color: #8F8F8F;
+}
+
+.input > select {
+    background: #D9D9D9;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.input > input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.input > input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input > input:focus {
+    outline: none;
+}
+
+#bruh {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-between;
+}
+
+#left > input, #right > input {
+    width: 85%;
+    margin-left: 7%;
+}
+
+#left {
+    width: 55%;
+    height: 100%;
+    margin: 0;
+}
+
+#right {
+    width: 35%;
+    height: 100%;
+    margin: 0;
+}
+
+#inputs {
+    width: 80%;
+    margin: auto;
+}
+
+#switch {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pay-button {
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+#switch img {
+    position: relative;
+}
+
+#music {
+    background: #831313;
+    width: 80vw;
+    height: 10vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    border: none;
+}
+
+.horizontal-flex {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    height: 7%;
+    margin: auto;
+    margin-top: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-flex > img {
+    width: 16%;
+    position: relative;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile {
+    padding-bottom: 4%;
+}
+
+@media screen and (min-width: 1024px) {
+    .desktop {
+        display: block;
+    }
+
+    footer {
+        padding-bottom: 1rem;
+    }
+
+    .merch {
+        width: 20%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+
+    #merch-link {
+        margin-bottom: 3rem;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    h2 {
+        margin-top: 2rem;
+    }
+
+    p, span, li {
+        font-size: 14px;
+    }
+
+    #donate-button {
+        margin-top: 0;
+        width: 40%;
+        height: 3rem;
+        font-size: 16px;
+    }
+
+    #members {
+        width: 60%;
+        left: 20%;
+        object-fit: cover;
+    }
+
+    #white-ward {
+        top: 25%;
+        height: 35%;
+        object-fit: scale-down;
+    }
+
+    .subtitle {
+        margin-top: 35%;
+        font-size: 36px;
+        font-weight: 200;
+        letter-spacing: 2px;
+    }
+
+    #latest-album {
+        width: 40%;
+        left: 5%;
+    }
+
+    #black-left {
+        width: 20%;
+        height: 20%;
+        background: black;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+
+    #black-right {
+        width: 20%;
+        height: 20%;
+        background: black;
+        position: absolute;
+        top: 2rem;
+        right: 0;
+    }
+
+    #flag {
+        bottom: 0;
+        height: 20%;
+    }
+
+    #flag-text-upper {
+        margin-top: 15%;
+        position: absolute;
+        left: 5%;
+        text-align: left;
+    }
+
+    #flag-text-lower {
+        margin-top: 15.5%;
+        margin-left: 22%;
+    }
+
+    #flag-text-lower > a {
+        display: inline-block;
+        margin-left: 24%;
+    }
+
+    .text.desktop {
+        margin-left: 30%;
+        margin-bottom: 3rem;
+    }
+
+    #members-full {
+        left: 0;
+        width: 100%;
+    }
+
+    #latest-album-heading {
+        margin-top: 75%;
+    }
+
+    #reviews {
+        margin-top: 5%;
+        width: 40%;
+        right: 5%;
+        position: absolute;
+    }
+
+    .review {
+        margin-bottom: 10%;
+        font-size: 18px;
+        z-index: -2;
+    }
+
+    #history {
+        margin-top: 3rem;
+    }
+
+    footer {
+        height: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    #listen {
+        width: 40%;
+        margin-top: 45%;
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+    }
+
+    #listen > .text {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Helvetica Neue';
+        width: 10rem;
+    }
+
+    #modal {
+        height: 50%;
+        width: 30%;
+    }
+
+    #modal-container > img, #modal-container > div {
+        width: 45%;
+    }
+
+    #music {
+        width: 30%;
+    }
+
+    #music > .horizontal-flex {
+        align-items: center;
+        margin-top: 2.5rem;
+    }
+
+    iframe {
+        margin-left: 39%;
+    }
+
+    #latest-album-heading {
+        margin-bottom: 2rem;
+    }
+}

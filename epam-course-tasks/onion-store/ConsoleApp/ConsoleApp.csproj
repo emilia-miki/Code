@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>ConsoleApp</RootNamespace>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceInterface\ServiceInterface.csproj" />
+    <ProjectReference Include="..\MockLibrary\MockLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

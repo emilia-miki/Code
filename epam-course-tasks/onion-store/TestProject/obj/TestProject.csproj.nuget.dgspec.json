@@ -1,0 +1,365 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mykytko/RiderProjects/onion_store/TestProject/TestProject.csproj": {}
+  },
+  "projects": {
+    "/Users/mykytko/RiderProjects/onion_store/MockLibrary/MockLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mykytko/RiderProjects/onion_store/MockLibrary/MockLibrary.csproj",
+        "projectName": "MockLibrary",
+        "projectPath": "/Users/mykytko/RiderProjects/onion_store/MockLibrary/MockLibrary.csproj",
+        "packagesPath": "/Users/mykytko/.nuget/packages/",
+        "outputPath": "/Users/mykytko/RiderProjects/onion_store/MockLibrary/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mykytko/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/mykytko/RiderProjects/onion_store/ServiceInterface/ServiceInterface.csproj": {
+                "projectPath": "/Users/mykytko/RiderProjects/onion_store/ServiceInterface/ServiceInterface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mykytko/RiderProjects/onion_store/OnionCore/OnionCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mykytko/RiderProjects/onion_store/OnionCore/OnionCore.csproj",
+        "projectName": "OnionCore",
+        "projectPath": "/Users/mykytko/RiderProjects/onion_store/OnionCore/OnionCore.csproj",
+        "packagesPath": "/Users/mykytko/.nuget/packages/",
+        "outputPath": "/Users/mykytko/RiderProjects/onion_store/OnionCore/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mykytko/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mykytko/RiderProjects/onion_store/RepositoryInterface/RepositoryInterface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mykytko/RiderProjects/onion_store/RepositoryInterface/RepositoryInterface.csproj",
+        "projectName": "RepositoryInterface",
+        "projectPath": "/Users/mykytko/RiderProjects/onion_store/RepositoryInterface/RepositoryInterface.csproj",
+        "packagesPath": "/Users/mykytko/.nuget/packages/",
+        "outputPath": "/Users/mykytko/RiderProjects/onion_store/RepositoryInterface/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mykytko/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/mykytko/RiderProjects/onion_store/OnionCore/OnionCore.csproj": {
+                "projectPath": "/Users/mykytko/RiderProjects/onion_store/OnionCore/OnionCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mykytko/RiderProjects/onion_store/ServiceInterface/ServiceInterface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mykytko/RiderProjects/onion_store/ServiceInterface/ServiceInterface.csproj",
+        "projectName": "ServiceInterface",
+        "projectPath": "/Users/mykytko/RiderProjects/onion_store/ServiceInterface/ServiceInterface.csproj",
+        "packagesPath": "/Users/mykytko/.nuget/packages/",
+        "outputPath": "/Users/mykytko/RiderProjects/onion_store/ServiceInterface/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mykytko/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/mykytko/RiderProjects/onion_store/RepositoryInterface/RepositoryInterface.csproj": {
+                "projectPath": "/Users/mykytko/RiderProjects/onion_store/RepositoryInterface/RepositoryInterface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mykytko/RiderProjects/onion_store/TestProject/TestProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mykytko/RiderProjects/onion_store/TestProject/TestProject.csproj",
+        "projectName": "TestProject",
+        "projectPath": "/Users/mykytko/RiderProjects/onion_store/TestProject/TestProject.csproj",
+        "packagesPath": "/Users/mykytko/.nuget/packages/",
+        "outputPath": "/Users/mykytko/RiderProjects/onion_store/TestProject/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mykytko/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/mykytko/RiderProjects/onion_store/MockLibrary/MockLibrary.csproj": {
+                "projectPath": "/Users/mykytko/RiderProjects/onion_store/MockLibrary/MockLibrary.csproj"
+              },
+              "/Users/mykytko/RiderProjects/onion_store/ServiceInterface/ServiceInterface.csproj": {
+                "projectPath": "/Users/mykytko/RiderProjects/onion_store/ServiceInterface/ServiceInterface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.2, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
