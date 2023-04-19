@@ -1,0 +1,31 @@
+# repos are already on github
+repos
+
+# JS
+package-lock.json
+node_modules
+
+# Python
+__pycache
+
+# Data Science
+*.csv
+*.h5
+
+# LaTeX, Data Science
+*.pdf
+
+# C#
+bin
+obj
+resources
+
+# C
+build
+CMakeCache.txt
+out
+
+# Java
+*gradle*
+!*gradle.kts
+
